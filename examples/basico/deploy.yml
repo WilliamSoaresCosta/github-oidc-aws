@@ -1,0 +1,25 @@
+# .github/workflows/deploy.yml no repositório "meu-site"
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  id-token: write # pede o token OIDC ao GitHub (nenhuma chave guardada)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }} # output role_arn (não é segredo)
+          aws-region: us-east-1
+
+      - run: aws s3 sync ./public s3://meu-site-bucket --delete
