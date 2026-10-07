@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="190" viewBox="0 0 860 190" role="img" aria-label="Login por OIDC: workflow, token, AWS STS, role temporária e deploy">
+<defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="75" y1="0" x2="785" y2="0"><stop offset="0" stop-color="#7cc4ff"/><stop offset="1" stop-color="#6edc92"/></linearGradient>
+<radialGradient id="p"><stop offset="0" stop-color="#ffe2a0"/><stop offset=".55" stop-color="#f5b83d"/><stop offset="1" stop-color="#f5b83d" stop-opacity="0"/></radialGradient></defs>
+<style>
+text{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+.t{fill:#eef1f7;font-size:14px;font-weight:600}
+.s{fill:#a3adc2;font-size:11.5px}
+.st{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px}
+.hd{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;fill:#a3adc2}
+@keyframes fill{0%{stroke-dashoffset:710}66.7%{stroke-dashoffset:0}92%{stroke-dashoffset:0;opacity:1}97%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes pkt{0%{transform:translateX(0);opacity:0}2%{opacity:1}66.7%{transform:translateX(710px);opacity:1}83.38%,100%{transform:translateX(710px);opacity:0}}
+@keyframes res{0%,85.38%{opacity:0}88.38%,93%{opacity:1}97%,100%{opacity:0}}
+@keyframes led{0%,100%{opacity:1}50%{opacity:.3}}
+.line{stroke:url(#g);stroke-width:3;stroke-dasharray:710;animation:fill 9.0s linear infinite}
+.pkt{animation:pkt 9.0s linear infinite}
+.res{animation:res 9.0s linear infinite}
+.led{animation:led 1.2s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.line{stroke-dashoffset:0}.o{opacity:1!important}.w{opacity:0!important}.res{opacity:1!important}}
+@keyframes n0{0%,0.00%{stroke:#2b3754}0.60%,16.68%{stroke:#f5b83d}17.28%,92%{stroke:#6edc92}97%,100%{stroke:#2b3754}}@keyframes w0{0%,0.00%{opacity:1}0.60%,96%{opacity:0}98%,100%{opacity:1}}@keyframes r0{0%,0.00%{opacity:0}0.60%,16.68%{opacity:1}17.28%,100%{opacity:0}}@keyframes o0{0%,16.68%{opacity:0}17.28%,92%{opacity:1}96%,100%{opacity:0}}.n0{animation:n0 9.0s linear infinite}.w0{animation:w0 9.0s linear infinite}.r0{animation:r0 9.0s linear infinite}.o0{animation:o0 9.0s linear infinite}
+@keyframes n1{0%,16.68%{stroke:#2b3754}17.28%,33.35%{stroke:#f5b83d}33.95%,92%{stroke:#6edc92}97%,100%{stroke:#2b3754}}@keyframes w1{0%,16.68%{opacity:1}17.28%,96%{opacity:0}98%,100%{opacity:1}}@keyframes r1{0%,16.68%{opacity:0}17.28%,33.35%{opacity:1}33.95%,100%{opacity:0}}@keyframes o1{0%,33.35%{opacity:0}33.95%,92%{opacity:1}96%,100%{opacity:0}}.n1{animation:n1 9.0s linear infinite}.w1{animation:w1 9.0s linear infinite}.r1{animation:r1 9.0s linear infinite}.o1{animation:o1 9.0s linear infinite}
+@keyframes n2{0%,33.35%{stroke:#2b3754}33.95%,50.03%{stroke:#f5b83d}50.63%,92%{stroke:#6edc92}97%,100%{stroke:#2b3754}}@keyframes w2{0%,33.35%{opacity:1}33.95%,96%{opacity:0}98%,100%{opacity:1}}@keyframes r2{0%,33.35%{opacity:0}33.95%,50.03%{opacity:1}50.63%,100%{opacity:0}}@keyframes o2{0%,50.03%{opacity:0}50.63%,92%{opacity:1}96%,100%{opacity:0}}.n2{animation:n2 9.0s linear infinite}.w2{animation:w2 9.0s linear infinite}.r2{animation:r2 9.0s linear infinite}.o2{animation:o2 9.0s linear infinite}
+@keyframes n3{0%,50.03%{stroke:#2b3754}50.63%,66.70%{stroke:#f5b83d}67.30%,92%{stroke:#6edc92}97%,100%{stroke:#2b3754}}@keyframes w3{0%,50.03%{opacity:1}50.63%,96%{opacity:0}98%,100%{opacity:1}}@keyframes r3{0%,50.03%{opacity:0}50.63%,66.70%{opacity:1}67.30%,100%{opacity:0}}@keyframes o3{0%,66.70%{opacity:0}67.30%,92%{opacity:1}96%,100%{opacity:0}}.n3{animation:n3 9.0s linear infinite}.w3{animation:w3 9.0s linear infinite}.r3{animation:r3 9.0s linear infinite}.o3{animation:o3 9.0s linear infinite}
+@keyframes n4{0%,66.70%{stroke:#2b3754}67.30%,83.38%{stroke:#f5b83d}83.97%,92%{stroke:#6edc92}97%,100%{stroke:#2b3754}}@keyframes w4{0%,66.70%{opacity:1}67.30%,96%{opacity:0}98%,100%{opacity:1}}@keyframes r4{0%,66.70%{opacity:0}67.30%,83.38%{opacity:1}83.97%,100%{opacity:0}}@keyframes o4{0%,83.38%{opacity:0}83.97%,92%{opacity:1}96%,100%{opacity:0}}.n4{animation:n4 9.0s linear infinite}.w4{animation:w4 9.0s linear infinite}.r4{animation:r4 9.0s linear infinite}.o4{animation:o4 9.0s linear infinite}</style>
+<rect x="1" y="1" width="858" height="188" rx="18" fill="#121a2c" stroke="#232e46"/>
+<circle class="led" cx="26" cy="24" r="4" fill="#f5b83d"/><text x="38" y="28" class="hd">deploy.yml · main</text>
+<text x="836" y="28" text-anchor="end" class="hd res" style="fill:#6edc92" opacity="0">✓ sessão de 1 hora</text>
+<line x1="75" y1="70" x2="785" y2="70" stroke="#22304d" stroke-width="3"/>
+<line class="line" x1="75" y1="70" x2="785" y2="70"/>
+<g><rect class="n0" x="51" y="46" width="48" height="48" rx="13" fill="#0c1220" stroke="#2b3754" stroke-width="2"/>
+<text x="75" y="75" text-anchor="middle" class="st" fill="#7cc4ff">01</text>
+<text x="75" y="118" text-anchor="middle" class="t">Workflow</text>
+<text x="75" y="135" text-anchor="middle" class="s">id-token: write</text>
+<text x="75" y="156" text-anchor="middle" class="st w w0" fill="#5d6a86">na fila</text>
+<text x="75" y="156" text-anchor="middle" class="st r0" fill="#f5b83d" opacity="0">rodando…</text>
+<text x="75" y="156" text-anchor="middle" class="st o o0" fill="#6edc92" opacity="0">✓ ok</text></g><g><rect class="n1" x="228" y="46" width="48" height="48" rx="13" fill="#0c1220" stroke="#2b3754" stroke-width="2"/>
+<text x="252" y="75" text-anchor="middle" class="st" fill="#7cc4ff">02</text>
+<text x="252" y="118" text-anchor="middle" class="t">Token OIDC</text>
+<text x="252" y="135" text-anchor="middle" class="s">repo + branch</text>
+<text x="252" y="156" text-anchor="middle" class="st w w1" fill="#5d6a86">na fila</text>
+<text x="252" y="156" text-anchor="middle" class="st r1" fill="#f5b83d" opacity="0">rodando…</text>
+<text x="252" y="156" text-anchor="middle" class="st o o1" fill="#6edc92" opacity="0">✓ ok</text></g><g><rect class="n2" x="406" y="46" width="48" height="48" rx="13" fill="#0c1220" stroke="#2b3754" stroke-width="2"/>
+<text x="430" y="75" text-anchor="middle" class="st" fill="#7cc4ff">03</text>
+<text x="430" y="118" text-anchor="middle" class="t">AWS STS</text>
+<text x="430" y="135" text-anchor="middle" class="s">confere a role</text>
+<text x="430" y="156" text-anchor="middle" class="st w w2" fill="#5d6a86">na fila</text>
+<text x="430" y="156" text-anchor="middle" class="st r2" fill="#f5b83d" opacity="0">rodando…</text>
+<text x="430" y="156" text-anchor="middle" class="st o o2" fill="#6edc92" opacity="0">✓ ok</text></g><g><rect class="n3" x="584" y="46" width="48" height="48" rx="13" fill="#0c1220" stroke="#2b3754" stroke-width="2"/>
+<text x="608" y="75" text-anchor="middle" class="st" fill="#7cc4ff">04</text>
+<text x="608" y="118" text-anchor="middle" class="t">Role</text>
+<text x="608" y="135" text-anchor="middle" class="s">credencial curta</text>
+<text x="608" y="156" text-anchor="middle" class="st w w3" fill="#5d6a86">na fila</text>
+<text x="608" y="156" text-anchor="middle" class="st r3" fill="#f5b83d" opacity="0">rodando…</text>
+<text x="608" y="156" text-anchor="middle" class="st o o3" fill="#6edc92" opacity="0">✓ ok</text></g><g><rect class="n4" x="761" y="46" width="48" height="48" rx="13" fill="#0c1220" stroke="#2b3754" stroke-width="2"/>
+<text x="785" y="75" text-anchor="middle" class="st" fill="#7cc4ff">05</text>
+<text x="785" y="118" text-anchor="middle" class="t">Deploy</text>
+<text x="785" y="135" text-anchor="middle" class="s">sem access key</text>
+<text x="785" y="156" text-anchor="middle" class="st w w4" fill="#5d6a86">na fila</text>
+<text x="785" y="156" text-anchor="middle" class="st r4" fill="#f5b83d" opacity="0">rodando…</text>
+<text x="785" y="156" text-anchor="middle" class="st o o4" fill="#6edc92" opacity="0">✓ ok</text></g>
+<circle class="pkt" cx="75" cy="70" r="9" fill="url(#p)"/>
+</svg>

@@ -12,6 +12,8 @@ trust policy só conhecia o nome. Descobri olhando o evento no CloudTrail. Escre
 
 O módulo aceita os dois formatos.
 
+<p align="center"><img src="assets/fluxo.svg" alt="Login por OIDC: workflow, token, AWS STS, role e deploy" width="100%" /></p>
+
 ## Uso
 
 ```hcl
